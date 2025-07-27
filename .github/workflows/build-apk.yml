@@ -1,0 +1,91 @@
+name: Build Flutter APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Java JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'zulu'
+        java-version: '17'
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.16.0'
+        channel: 'stable'
+
+    - name: Flutter Doctor
+      run: flutter doctor -v
+
+    - name: Get dependencies
+      run: flutter pub get
+
+    - name: Generate app icons
+      run: flutter pub run flutter_launcher_icons:main
+      continue-on-error: true
+
+    - name: Analyze code
+      run: flutter analyze
+      continue-on-error: true
+
+    - name: Run tests
+      run: flutter test
+      continue-on-error: true
+
+    - name: Build APK
+      run: flutter build apk --release --split-per-abi
+
+    - name: Build App Bundle
+      run: flutter build appbundle --release
+
+    - name: Upload APK artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: release-apks
+        path: |
+          build/app/outputs/flutter-apk/*.apk
+          build/app/outputs/bundle/release/*.aab
+
+    - name: Create Release
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v${{ github.run_number }}
+        name: Release v${{ github.run_number }}
+        body: |
+          ## Vehicle Gallery App - Release v${{ github.run_number }}
+          
+          ### Features
+          - iOS-like interface for viewing vehicle images and videos
+          - Full vehicle management with CRUD operations
+          - Advanced search and filtering capabilities
+          - Media gallery with zoom and navigation
+          - SQLite database for offline storage
+          
+          ### Downloads
+          - **APK Files**: Download the appropriate APK for your device architecture
+          - **App Bundle**: For Google Play Store distribution
+          
+          ### Installation
+          1. Download the APK file for your device
+          2. Enable "Install from unknown sources" in your Android settings
+          3. Install the APK file
+          
+        files: |
+          build/app/outputs/flutter-apk/*.apk
+          build/app/outputs/bundle/release/*.aab
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

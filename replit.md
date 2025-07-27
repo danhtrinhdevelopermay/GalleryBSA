@@ -1,12 +1,53 @@
-# Vehicle Management System
+# Vehicle Gallery - Flutter Android App
 
 ## Overview
 
-This is a full-stack vehicle management system built with React, Express, and TypeScript. The application allows users to manage vehicle information including media files (images and videos), with features for creating, editing, deleting, and searching vehicles. The system uses a modern tech stack with shadcn/ui components for the frontend and Drizzle ORM with PostgreSQL for data persistence.
+This is a Flutter Android application for viewing vehicle images and videos with an iOS-like interface. The app provides comprehensive vehicle management features including CRUD operations, advanced media gallery, search and filtering, and offline SQLite storage. Built with modern Flutter architecture and designed for professional vehicle management with beautiful media galleries.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Recent Changes (January 2025)
+
+### Complete Flutter Project Setup
+✓ Created Flutter app with iOS-like Cupertino design theme
+✓ Implemented SQLite database with sample vehicle data  
+✓ Built responsive vehicle grid with masonry layout
+✓ Added full-screen media gallery with zoom and video playback
+✓ Created comprehensive CRUD screens (Home, Detail, Add, Edit)
+✓ Integrated advanced search and filtering functionality
+✓ Configured GitHub Actions for automated APK building
+✓ Set up Android permissions and manifest configuration
+
+## Flutter App Architecture
+
+### Mobile Application Framework
+- **Platform**: Android (with iOS-like interface design)
+- **Framework**: Flutter 3.16+ with Dart programming language
+- **UI Design**: Cupertino (iOS-style) components with Material Design 3
+- **State Management**: StatefulWidget with setState pattern
+- **Navigation**: Standard Flutter navigation with CupertinoPageRoute
+
+### Database & Storage
+- **Local Database**: SQLite with sqflite package for offline storage
+- **Media Storage**: Device file system with proper Android permissions
+- **Data Models**: Dart classes with JSON serialization
+- **Sample Data**: Pre-loaded vehicle database with demo content
+
+### Key Flutter Components
+- **Vehicle Grid**: Masonry layout using flutter_staggered_grid_view
+- **Media Gallery**: Full-screen viewer with photo_view and video_player
+- **Search & Filter**: Real-time filtering with custom widgets
+- **Form Handling**: Flutter form validation with custom text fields
+- **Theme System**: Custom iOS-like theme with light/dark mode support
+
+### External Dependencies
+- **Media Handling**: image_picker, file_picker for camera/gallery access
+- **Network Images**: cached_network_image for efficient image loading
+- **Database**: sqflite for SQLite operations
+- **Sharing**: share_plus for media sharing capabilities
+- **UI Components**: Custom Cupertino-styled widgets
 
 ## System Architecture
 
