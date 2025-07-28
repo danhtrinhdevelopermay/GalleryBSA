@@ -1,0 +1,29 @@
+﻿2025-07-28T01:37:55.4385078Z ##[group]Run flutter build apk --release --split-per-abi
+2025-07-28T01:37:55.4385483Z [36;1mflutter build apk --release --split-per-abi[0m
+2025-07-28T01:37:55.4413972Z shell: /usr/bin/bash -e {0}
+2025-07-28T01:37:55.4414203Z env:
+2025-07-28T01:37:55.4414443Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.28-6/x64
+2025-07-28T01:37:55.4414832Z   JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.28-6/x64
+2025-07-28T01:37:55.4415217Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T01:37:55.4415532Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T01:37:55.4415764Z ##[endgroup]
+2025-07-28T01:37:56.0588516Z 
+2025-07-28T01:39:10.8623071Z 
+2025-07-28T01:39:10.8623961Z Running Gradle task 'assembleRelease'...                        
+2025-07-28T01:39:10.8636750Z FAILURE: Build failed with an exception.
+2025-07-28T01:39:10.8638042Z 
+2025-07-28T01:39:10.8638413Z * What went wrong:
+2025-07-28T01:39:10.8639003Z A problem occurred configuring project ':app'.
+2025-07-28T01:39:10.8639873Z > java.lang.NoClassDefFoundError: com/android/build/OutputFile
+2025-07-28T01:39:10.8640491Z 
+2025-07-28T01:39:10.8640753Z * Try:
+2025-07-28T01:39:10.8652923Z > Run with --stacktrace option to get the stack trace.
+2025-07-28T01:39:10.8658852Z > Run with --info or --debug option to get more log output.
+2025-07-28T01:39:10.8664318Z > Run with --scan to get full insights.
+2025-07-28T01:39:10.8668925Z 
+2025-07-28T01:39:10.8676886Z * Get more help at https://help.gradle.org
+2025-07-28T01:39:10.8679741Z 
+2025-07-28T01:39:10.8679995Z BUILD FAILED in 1m 14s
+2025-07-28T01:39:11.3053074Z Running Gradle task 'assembleRelease'...                           75.2s
+2025-07-28T01:39:11.3102227Z Gradle task assembleRelease failed with exit code 1
+2025-07-28T01:39:11.3254657Z ##[error]Process completed with exit code 1.
