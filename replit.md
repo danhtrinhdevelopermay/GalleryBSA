@@ -36,7 +36,8 @@ Preferred communication style: Simple, everyday language.
   - SDK Versions: compileSdk/targetSdk = 33 (proven stable)
   - HYBRID APPROACH: Java 11 runner + Java 8 compatibility builds
 ✓ Resolved NoClassDefFoundError by reverting to legacy AGP stack
-✓ ProGuard rules protecting Android Build and Flutter framework classes
+✓ Removed project.evaluationDependsOn(':app') causing build conflicts
+✓ ProGuard rules protecting Android Build and Flutter framework classes  
 ✓ Complete documentation in GRADLE_FIX.md with troubleshooting steps root cause analysis
 
 ## Flutter App Architecture

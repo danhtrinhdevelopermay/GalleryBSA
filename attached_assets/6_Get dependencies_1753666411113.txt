@@ -1,0 +1,126 @@
+﻿2025-07-28T01:28:46.3190366Z ##[group]Run flutter pub get
+2025-07-28T01:28:46.3190661Z [36;1mflutter pub get[0m
+2025-07-28T01:28:46.3218371Z shell: /usr/bin/bash -e {0}
+2025-07-28T01:28:46.3218620Z env:
+2025-07-28T01:28:46.3218857Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.28-6/x64
+2025-07-28T01:28:46.3219250Z   JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.28-6/x64
+2025-07-28T01:28:46.3219649Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T01:28:46.3219985Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T01:28:46.3220227Z ##[endgroup]
+2025-07-28T01:28:46.6866908Z Resolving dependencies...
+2025-07-28T01:28:53.8920300Z + archive 4.0.7
+2025-07-28T01:28:53.8920731Z + args 2.5.0 (2.7.0 available)
+2025-07-28T01:28:53.8921187Z + async 2.11.0 (2.13.0 available)
+2025-07-28T01:28:53.8921585Z + boolean_selector 2.1.1 (2.1.2 available)
+2025-07-28T01:28:53.8922020Z + cached_network_image 3.3.1 (3.4.1 available)
+2025-07-28T01:28:53.8922566Z + cached_network_image_platform_interface 4.0.0 (4.1.1 available)
+2025-07-28T01:28:53.8923225Z + cached_network_image_web 1.2.0 (1.3.1 available)
+2025-07-28T01:28:53.8923685Z + characters 1.3.0 (1.4.1 available)
+2025-07-28T01:28:53.8924083Z + checked_yaml 2.0.3 (2.0.4 available)
+2025-07-28T01:28:53.8924469Z + cli_util 0.4.1 (0.4.2 available)
+2025-07-28T01:28:53.8924841Z + clock 1.1.1 (1.1.2 available)
+2025-07-28T01:28:53.8925191Z + collection 1.18.0 (1.19.1 available)
+2025-07-28T01:28:53.8925589Z + cross_file 0.3.3+8 (0.3.4+2 available)
+2025-07-28T01:28:53.8925996Z + crypto 3.0.3 (3.0.6 available)
+2025-07-28T01:28:53.8926333Z + csslib 1.0.2
+2025-07-28T01:28:53.8926625Z + cupertino_icons 1.0.8
+2025-07-28T01:28:53.8926943Z + fake_async 1.3.1 (1.3.3 available)
+2025-07-28T01:28:53.8927657Z + ffi 2.1.0 (2.1.4 available)
+2025-07-28T01:28:53.8928002Z + file 6.1.4 (7.0.1 available)
+2025-07-28T01:28:53.8928592Z + file_picker 6.2.1 (10.2.0 available)
+2025-07-28T01:28:53.8929025Z + file_selector_linux 0.9.2+1 (0.9.3+2 available)
+2025-07-28T01:28:53.8929478Z + file_selector_macos 0.9.4 (0.9.4+3 available)
+2025-07-28T01:28:53.8929933Z + file_selector_platform_interface 2.6.2
+2025-07-28T01:28:53.8930317Z + file_selector_windows 0.9.3+2 (0.9.3+4 available)
+2025-07-28T01:28:53.8930565Z + fixnum 1.1.1
+2025-07-28T01:28:53.8930738Z + flutter 0.0.0 from sdk flutter
+2025-07-28T01:28:53.8930975Z + flutter_cache_manager 3.3.1 (3.4.1 available)
+2025-07-28T01:28:53.8931234Z + flutter_driver 0.0.0 from sdk flutter
+2025-07-28T01:28:53.8931506Z + flutter_launcher_icons 0.13.1 (0.14.4 available)
+2025-07-28T01:28:53.8931776Z + flutter_lints 3.0.2 (6.0.0 available)
+2025-07-28T01:28:53.8932068Z + flutter_plugin_android_lifecycle 2.0.19 (2.0.28 available)
+2025-07-28T01:28:53.8932391Z + flutter_staggered_grid_view 0.7.0
+2025-07-28T01:28:53.8932628Z + flutter_svg 2.0.10+1 (2.2.0 available)
+2025-07-28T01:28:53.8932859Z + flutter_test 0.0.0 from sdk flutter
+2025-07-28T01:28:53.8933100Z + flutter_web_plugins 0.0.0 from sdk flutter
+2025-07-28T01:28:53.8933377Z + fuchsia_remote_debug_protocol 0.0.0 from sdk flutter
+2025-07-28T01:28:53.8933642Z + html 0.15.6
+2025-07-28T01:28:53.8933806Z + http 1.2.0 (1.4.0 available)
+2025-07-28T01:28:53.8934017Z + http_parser 4.0.2 (4.1.2 available)
+2025-07-28T01:28:53.8934225Z + image 4.5.4
+2025-07-28T01:28:53.8934399Z + image_picker 1.0.8 (1.1.2 available)
+2025-07-28T01:28:53.8934653Z + image_picker_android 0.8.9+6 (0.8.12+24 available)
+2025-07-28T01:28:53.8934934Z + image_picker_for_web 3.0.2 (3.0.6 available)
+2025-07-28T01:28:53.8935198Z + image_picker_ios 0.8.9+1 (0.8.12+2 available)
+2025-07-28T01:28:53.8935455Z + image_picker_linux 0.2.1+1 (0.2.1+2 available)
+2025-07-28T01:28:53.8935716Z + image_picker_macos 0.2.1+1 (0.2.1+2 available)
+2025-07-28T01:28:53.8936004Z + image_picker_platform_interface 2.9.3 (2.10.1 available)
+2025-07-28T01:28:53.8936290Z + image_picker_windows 0.2.1+1
+2025-07-28T01:28:53.8936508Z + integration_test 0.0.0 from sdk flutter
+2025-07-28T01:28:53.8936743Z + json_annotation 4.9.0
+2025-07-28T01:28:53.8936938Z + lints 3.0.0 (6.0.0 available)
+2025-07-28T01:28:53.8937379Z + matcher 0.12.16 (0.12.17 available)
+2025-07-28T01:28:53.8937630Z + material_color_utilities 0.5.0 (0.13.0 available)
+2025-07-28T01:28:53.8937881Z + meta 1.10.0 (1.17.0 available)
+2025-07-28T01:28:53.8938088Z + mime 1.0.6 (2.0.0 available)
+2025-07-28T01:28:53.8938521Z + octo_image 2.1.0
+2025-07-28T01:28:53.8938711Z + path 1.8.3 (1.9.1 available)
+2025-07-28T01:28:53.8938925Z + path_parsing 1.0.1 (1.1.0 available)
+2025-07-28T01:28:53.8939168Z + path_provider 2.1.4 (2.1.5 available)
+2025-07-28T01:28:53.8939432Z + path_provider_android 2.2.4 (2.2.17 available)
+2025-07-28T01:28:53.8939705Z + path_provider_foundation 2.3.2 (2.4.1 available)
+2025-07-28T01:28:53.8939967Z + path_provider_linux 2.2.1
+2025-07-28T01:28:53.8940189Z + path_provider_platform_interface 2.1.2
+2025-07-28T01:28:53.8940434Z + path_provider_windows 2.3.0
+2025-07-28T01:28:53.8940661Z + permission_handler 11.3.1 (12.0.1 available)
+2025-07-28T01:28:53.8941016Z + permission_handler_android 12.0.13 (13.0.1 available)
+2025-07-28T01:28:53.8941563Z + permission_handler_apple 9.4.7
+2025-07-28T01:28:53.8941962Z + permission_handler_html 0.1.1 (0.1.3+5 available)
+2025-07-28T01:28:53.8942516Z + permission_handler_platform_interface 4.2.3 (4.3.0 available)
+2025-07-28T01:28:53.8942945Z + permission_handler_windows 0.2.1
+2025-07-28T01:28:53.8943182Z + petitparser 6.0.2 (7.0.0 available)
+2025-07-28T01:28:53.8943416Z + photo_view 0.14.0 (0.15.0 available)
+2025-07-28T01:28:53.8943653Z + platform 3.1.2 (3.1.6 available)
+2025-07-28T01:28:53.8943883Z + plugin_platform_interface 2.1.8
+2025-07-28T01:28:53.8944093Z + posix 6.0.3
+2025-07-28T01:28:53.8944268Z + process 4.2.4 (5.0.4 available)
+2025-07-28T01:28:53.8944477Z + rxdart 0.27.7 (0.28.0 available)
+2025-07-28T01:28:53.8944857Z + share_plus 7.2.2 (11.0.0 available)
+2025-07-28T01:28:53.8945119Z + share_plus_platform_interface 3.4.0 (6.0.0 available)
+2025-07-28T01:28:53.8945397Z + sky_engine 0.0.99 from sdk flutter
+2025-07-28T01:28:53.8945630Z + source_span 1.10.0 (1.10.1 available)
+2025-07-28T01:28:53.8945858Z + sprintf 7.0.0
+2025-07-28T01:28:53.8946037Z + sqflite 2.3.2 (2.4.2 available)
+2025-07-28T01:28:53.8946252Z + sqflite_common 2.5.3 (2.5.5 available)
+2025-07-28T01:28:53.8946485Z + stack_trace 1.11.1 (1.12.1 available)
+2025-07-28T01:28:53.8946710Z + stream_channel 2.1.2 (2.1.4 available)
+2025-07-28T01:28:53.8946943Z + string_scanner 1.2.0 (1.4.1 available)
+2025-07-28T01:28:53.8947155Z + sync_http 0.3.1
+2025-07-28T01:28:53.8947342Z + synchronized 3.1.0+1 (3.4.0 available)
+2025-07-28T01:28:53.8947567Z + term_glyph 1.2.1 (1.2.2 available)
+2025-07-28T01:28:53.8947787Z + test_api 0.6.1 (0.7.7 available)
+2025-07-28T01:28:53.8948002Z + typed_data 1.3.2 (1.4.0 available)
+2025-07-28T01:28:53.8948518Z + url_launcher_linux 3.1.1 (3.2.1 available)
+2025-07-28T01:28:53.8948779Z + url_launcher_platform_interface 2.3.2
+2025-07-28T01:28:53.8949016Z + url_launcher_web 2.2.3 (2.4.1 available)
+2025-07-28T01:28:53.8949265Z + url_launcher_windows 3.1.2 (3.1.4 available)
+2025-07-28T01:28:53.8949489Z + uuid 4.5.1
+2025-07-28T01:28:53.8949675Z + vector_graphics 1.1.11+1 (1.1.19 available)
+2025-07-28T01:28:53.8949935Z + vector_graphics_codec 1.1.11+1 (1.1.13 available)
+2025-07-28T01:28:53.8950338Z + vector_graphics_compiler 1.1.11+1 (1.1.17 available)
+2025-07-28T01:28:53.8950615Z + vector_math 2.1.4 (2.2.0 available)
+2025-07-28T01:28:53.8950837Z + video_player 2.8.5 (2.10.0 available)
+2025-07-28T01:28:53.8951082Z + video_player_android 2.4.14 (2.8.9 available)
+2025-07-28T01:28:53.8951352Z + video_player_avfoundation 2.5.6 (2.8.0 available)
+2025-07-28T01:28:53.8951669Z + video_player_platform_interface 6.2.2 (6.4.0 available)
+2025-07-28T01:28:53.8951950Z + video_player_web 2.1.3 (2.4.0 available)
+2025-07-28T01:28:53.8952186Z + vm_service 11.10.0 (15.0.2 available)
+2025-07-28T01:28:53.8952409Z + web 0.3.0 (1.1.1 available)
+2025-07-28T01:28:53.8952620Z + webdriver 3.0.2 (3.1.0 available)
+2025-07-28T01:28:53.8952838Z + win32 5.2.0 (5.14.0 available)
+2025-07-28T01:28:53.8953050Z + xdg_directories 1.0.4 (1.1.0 available)
+2025-07-28T01:28:53.8953433Z + xml 6.5.0 (6.6.0 available)
+2025-07-28T01:28:53.8953634Z + yaml 3.1.2 (3.1.3 available)
+2025-07-28T01:28:53.8953853Z Changed 113 dependencies!
+2025-07-28T01:28:53.8958820Z 84 packages have newer versions incompatible with dependency constraints.
+2025-07-28T01:28:53.8959219Z Try `flutter pub outdated` for more information.

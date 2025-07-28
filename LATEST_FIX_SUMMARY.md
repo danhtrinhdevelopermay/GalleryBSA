@@ -43,6 +43,7 @@ Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8
 ✅ **SDK Versions**: compileSdk/targetSdk = 33
 ✅ **JVM Target**: 1.8 (build compatibility) 
 ✅ **Memory**: 2GB allocation (stable)
+✅ **Build Config**: Removed evaluationDependsOn for compatibility
 
 ## Kiểm tra:
 - Tất cả files đã được cập nhật đồng bộ
