@@ -46,9 +46,9 @@ Phương thức `useProguard()` đã bị deprecated trong các phiên bản And
 - **Tạo test cơ bản**: Thêm `test/widget_test.dart` để resolve lỗi test directory
 
 ### 2. Cập nhật Android Gradle Plugin Version
-- **Cập nhật android/build.gradle**: Nâng cấp từ `7.3.0` lên `7.4.2`
-- **Cập nhật android/settings.gradle**: Đồng bộ phiên bản plugin với build.gradle
-- **Sửa null check**: Thay `value?? 'available'` bằng `if (value != null) _status = value;`
+- **Cập nhật android/build.gradle**: Nâng cấp từ `7.3.0` lên `8.1.4` (qua 7.4.2)
+- **Cập nhật android/settings.gradle**: Đồng bộ phiên bản plugin với build.gradle  
+- **Sửa null comparison**: Thay `value` parameter bằng `String? value` và `_status = value ?? 'available';`
 
 ### 3. Tắt App Icon Generation
 - **Comment flutter_icons config**: Tạm thời tắt cấu hình trong pubspec.yaml

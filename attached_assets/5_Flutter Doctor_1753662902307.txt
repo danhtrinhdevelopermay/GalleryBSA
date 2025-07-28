@@ -1,0 +1,91 @@
+﻿2025-07-28T00:32:00.2772017Z ##[group]Run flutter doctor -v
+2025-07-28T00:32:00.2772305Z [36;1mflutter doctor -v[0m
+2025-07-28T00:32:00.2801345Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:32:00.2801577Z env:
+2025-07-28T00:32:00.2801820Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:32:00.2802199Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:32:00.2802576Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:32:00.2802884Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:32:00.2803115Z ##[endgroup]
+2025-07-28T00:32:00.5062325Z 
+2025-07-28T00:32:00.5075133Z   ╔════════════════════════════════════════════════════════════════════════════╗
+2025-07-28T00:32:00.5075825Z   ║                 Welcome to Flutter! - https://flutter.dev                  ║
+2025-07-28T00:32:00.5076287Z   ║                                                                            ║
+2025-07-28T00:32:00.5076773Z   ║ The Flutter tool uses Google Analytics to anonymously report feature usage ║
+2025-07-28T00:32:00.5077420Z   ║ statistics and basic crash reports. This data is used to help improve      ║
+2025-07-28T00:32:00.5077964Z   ║ Flutter tools over time.                                                   ║
+2025-07-28T00:32:00.5078387Z   ║                                                                            ║
+2025-07-28T00:32:00.5078855Z   ║ Flutter tool analytics are not sent on the very first run. To disable      ║
+2025-07-28T00:32:00.5079444Z   ║ reporting, type 'flutter config --no-analytics'. To display the current    ║
+2025-07-28T00:32:00.5080014Z   ║ setting, type 'flutter config'. If you opt out of analytics, an opt-out    ║
+2025-07-28T00:32:00.5080829Z   ║ event will be sent, and then no further information will be sent by the    ║
+2025-07-28T00:32:00.5081330Z   ║ Flutter tool.                                                              ║
+2025-07-28T00:32:00.5081741Z   ║                                                                            ║
+2025-07-28T00:32:00.5082346Z   ║ By downloading the Flutter SDK, you agree to the Google Terms of Service.  ║
+2025-07-28T00:32:00.5082955Z   ║ The Google Privacy Policy describes how data is handled in this service.   ║
+2025-07-28T00:32:00.5083695Z   ║                                                                            ║
+2025-07-28T00:32:00.5084179Z   ║ Moreover, Flutter includes the Dart SDK, which may send usage metrics and  ║
+2025-07-28T00:32:00.5084723Z   ║ crash reports to Google.                                                   ║
+2025-07-28T00:32:00.5085146Z   ║                                                                            ║
+2025-07-28T00:32:00.5085629Z   ║ Read about data we send with crash reports:                                ║
+2025-07-28T00:32:00.5086206Z   ║ https://flutter.dev/docs/reference/crash-reporting                         ║
+2025-07-28T00:32:00.5086688Z   ║                                                                            ║
+2025-07-28T00:32:00.5087115Z   ║ See Google's privacy policy:                                               ║
+2025-07-28T00:32:00.5087627Z   ║ https://policies.google.com/privacy                                        ║
+2025-07-28T00:32:00.5088063Z   ║                                                                            ║
+2025-07-28T00:32:00.5088523Z   ║ To disable animations in this tool, use 'flutter config --no-animations'.  ║
+2025-07-28T00:32:00.5089036Z   ╚════════════════════════════════════════════════════════════════════════════╝
+2025-07-28T00:32:00.5089277Z 
+2025-07-28T00:32:05.1847970Z [✓] Flutter (Channel stable, 3.16.0, on Ubuntu 24.04.2 LTS 6.11.0-1018-azure, locale C.UTF-8)
+2025-07-28T00:32:05.1849231Z     • Flutter version 3.16.0 on channel stable at /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:32:05.1850319Z     • Upstream repository https://github.com/flutter/flutter.git
+2025-07-28T00:32:05.1851422Z     • Framework revision db7ef5bf9f (1 year, 8 months ago), 2023-11-15 11:25:44 -0800
+2025-07-28T00:32:05.1852245Z     • Engine revision 74d16627b9
+2025-07-28T00:32:05.1853565Z     • Dart version 3.2.0
+2025-07-28T00:32:05.1854072Z     • DevTools version 2.28.2
+2025-07-28T00:32:05.1854397Z 
+2025-07-28T00:32:10.2053241Z [!] Android toolchain - develop for Android devices (Android SDK version 36.0.0)
+2025-07-28T00:32:10.2054965Z     • Android SDK at /usr/local/lib/android/sdk
+2025-07-28T00:32:10.2055659Z     • Platform android-36, build-tools 36.0.0
+2025-07-28T00:32:10.2056286Z     • ANDROID_HOME = /usr/local/lib/android/sdk
+2025-07-28T00:32:10.2056942Z     • ANDROID_SDK_ROOT = /usr/local/lib/android/sdk
+2025-07-28T00:32:10.2057802Z     • Java binary at: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64/bin/java
+2025-07-28T00:32:10.2059377Z     • Java version OpenJDK Runtime Environment Zulu17.60+17-CA (build 17.0.16+8-LTS)
+2025-07-28T00:32:10.2060376Z     ! Some Android licenses not accepted. To resolve this, run: flutter doctor --android-licenses
+2025-07-28T00:32:10.2060982Z 
+2025-07-28T00:32:10.2064625Z [✓] Chrome - develop for the web
+2025-07-28T00:32:10.2065213Z     • Chrome at google-chrome
+2025-07-28T00:32:10.2065485Z 
+2025-07-28T00:32:10.2067177Z [✗] Linux toolchain - develop for Linux desktop
+2025-07-28T00:32:10.2067843Z     • Ubuntu clang version 18.1.3 (1ubuntu1)
+2025-07-28T00:32:10.2068551Z     • cmake version 3.31.6
+2025-07-28T00:32:10.2069621Z     • ninja version 1.13.1
+2025-07-28T00:32:10.2070407Z     • pkg-config version 1.8.1
+2025-07-28T00:32:10.2071652Z     ✗ GTK 3.0 development libraries are required for Linux development.
+2025-07-28T00:32:10.2072575Z       They are likely available from your distribution (e.g.: apt install libgtk-3-dev)
+2025-07-28T00:32:10.2077043Z 
+2025-07-28T00:32:10.2077248Z [!] Android Studio (not installed)
+2025-07-28T00:32:10.2079825Z     • Android Studio not found; download from https://developer.android.com/studio/index.html
+2025-07-28T00:32:10.2080975Z       (or visit https://flutter.dev/docs/get-started/install/linux#android-setup for detailed instructions).
+2025-07-28T00:32:10.2081666Z 
+2025-07-28T00:32:12.4921608Z [✓] Connected device (2 available)
+2025-07-28T00:32:12.4922773Z     • Linux (desktop) • linux  • linux-x64      • Ubuntu 24.04.2 LTS 6.11.0-1018-azure
+2025-07-28T00:32:12.4924203Z     • Chrome (web)    • chrome • web-javascript • Google Chrome 138.0.7204.157
+2025-07-28T00:32:12.4925150Z 
+2025-07-28T00:32:12.4925583Z [✓] Network resources
+2025-07-28T00:32:12.4926071Z     • All expected network resources are available.
+2025-07-28T00:32:12.4926519Z 
+2025-07-28T00:32:12.4927002Z ! Doctor found issues in 3 categories.
+2025-07-28T00:32:12.5093579Z The Flutter CLI developer tool uses Google Analytics to report usage and diagnostic data
+2025-07-28T00:32:12.5094665Z along with package dependencies, and crash reporting to send basic crash reports.
+2025-07-28T00:32:12.5095636Z This data is used to help improve the Dart platform, Flutter framework, and related tools.
+2025-07-28T00:32:12.5096220Z 
+2025-07-28T00:32:12.5096418Z Telemetry is not sent on the very first run.
+2025-07-28T00:32:12.5097048Z To disable reporting of telemetry, run this terminal command:
+2025-07-28T00:32:12.5097474Z 
+2025-07-28T00:32:12.5097648Z flutter --disable-analytics.
+2025-07-28T00:32:12.5098137Z If you opt out of telemetry, an opt-out event will be sent,
+2025-07-28T00:32:12.5098707Z and then no further information will be sent.
+2025-07-28T00:32:12.5099222Z This data is collected in accordance with the
+2025-07-28T00:32:12.5099841Z Google Privacy Policy (https://policies.google.com/privacy).
+2025-07-28T00:32:12.5100291Z 

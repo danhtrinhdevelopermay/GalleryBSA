@@ -1,0 +1,51 @@
+﻿2025-07-28T00:31:23.7778147Z Current runner version: '2.326.0'
+2025-07-28T00:31:23.7802084Z ##[group]Runner Image Provisioner
+2025-07-28T00:31:23.7802854Z Hosted Compute Agent
+2025-07-28T00:31:23.7803850Z Version: 20250711.363
+2025-07-28T00:31:23.7804470Z Commit: 6785254374ce925a23743850c1cb91912ce5c14c
+2025-07-28T00:31:23.7805151Z Build Date: 2025-07-11T20:04:25Z
+2025-07-28T00:31:23.7805822Z ##[endgroup]
+2025-07-28T00:31:23.7806314Z ##[group]Operating System
+2025-07-28T00:31:23.7806934Z Ubuntu
+2025-07-28T00:31:23.7807410Z 24.04.2
+2025-07-28T00:31:23.7807889Z LTS
+2025-07-28T00:31:23.7808338Z ##[endgroup]
+2025-07-28T00:31:23.7808852Z ##[group]Runner Image
+2025-07-28T00:31:23.7809416Z Image: ubuntu-24.04
+2025-07-28T00:31:23.7809877Z Version: 20250720.1.0
+2025-07-28T00:31:23.7810925Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250720.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-07-28T00:31:23.7812259Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250720.1
+2025-07-28T00:31:23.7813645Z ##[endgroup]
+2025-07-28T00:31:23.7814700Z ##[group]GITHUB_TOKEN Permissions
+2025-07-28T00:31:23.7816566Z Contents: read
+2025-07-28T00:31:23.7817099Z Metadata: read
+2025-07-28T00:31:23.7817631Z Packages: read
+2025-07-28T00:31:23.7818078Z ##[endgroup]
+2025-07-28T00:31:23.7820468Z Secret source: Actions
+2025-07-28T00:31:23.7821156Z Prepare workflow directory
+2025-07-28T00:31:23.8137842Z Prepare all required actions
+2025-07-28T00:31:23.8175151Z Getting action download info
+2025-07-28T00:31:24.2060551Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-07-28T00:31:24.2061742Z Version: 4.2.2
+2025-07-28T00:31:24.2062763Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-07-28T00:31:24.2064480Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-07-28T00:31:24.2065347Z ##[endgroup]
+2025-07-28T00:31:24.3094001Z ##[group]Download immutable action package 'actions/setup-java@v4'
+2025-07-28T00:31:24.3094851Z Version: 4.7.1
+2025-07-28T00:31:24.3095648Z Digest: sha256:23223d64943473efb4336f60463c0429cd4f422cd5fc6c48a5cf0d5907c1aeac
+2025-07-28T00:31:24.3096766Z Source commit SHA: c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+2025-07-28T00:31:24.3097505Z ##[endgroup]
+2025-07-28T00:31:24.5417657Z Download action repository 'subosito/flutter-action@v2' (SHA:e938fdf56512cc96ef2f93601a5a40bde3801046)
+2025-07-28T00:31:24.7088282Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-07-28T00:31:24.7089808Z Version: 4.6.2
+2025-07-28T00:31:24.7090970Z Digest: sha256:290722aa3281d5caf23d0acdc3dbeb3424786a1a01a9cc97e72f147225e37c38
+2025-07-28T00:31:24.7092608Z Source commit SHA: ea165f8d65b6e75b540449e92b4886f43607fa02
+2025-07-28T00:31:24.7094083Z ##[endgroup]
+2025-07-28T00:31:24.8185926Z Download action repository 'softprops/action-gh-release@v1' (SHA:de2c0eb89ae2a093876385947365aca7b0e5f844)
+2025-07-28T00:31:25.0479205Z Getting action download info
+2025-07-28T00:31:25.1808996Z ##[group]Download immutable action package 'actions/cache@v4'
+2025-07-28T00:31:25.1810381Z Version: 4.2.3
+2025-07-28T00:31:25.1811680Z Digest: sha256:c8a3bb963e1f1826d8fcc8d1354f0dd29d8ac1db1d4f6f20247055ae11b81ed9
+2025-07-28T00:31:25.1813678Z Source commit SHA: 5a3ec84eff668545956fd18022155c47e93e2684
+2025-07-28T00:31:25.1814904Z ##[endgroup]
+2025-07-28T00:31:25.3881191Z Complete job name: build-apk

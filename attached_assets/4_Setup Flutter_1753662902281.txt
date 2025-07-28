@@ -1,0 +1,55 @@
+﻿2025-07-28T00:31:30.5512870Z ##[group]Run subosito/flutter-action@v2
+2025-07-28T00:31:30.5513210Z with:
+2025-07-28T00:31:30.5513574Z   flutter-version: 3.16.0
+2025-07-28T00:31:30.5513796Z   channel: stable
+2025-07-28T00:31:30.5514008Z   architecture: X64
+2025-07-28T00:31:30.5514197Z   cache: false
+2025-07-28T00:31:30.5514416Z   pub-cache-path: default
+2025-07-28T00:31:30.5514629Z   dry-run: false
+2025-07-28T00:31:30.5514884Z   git-source: https://github.com/flutter/flutter.git
+2025-07-28T00:31:30.5515166Z env:
+2025-07-28T00:31:30.5515410Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.5515788Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.5516108Z ##[endgroup]
+2025-07-28T00:31:30.5602902Z ##[group]Run chmod +x "$GITHUB_ACTION_PATH/setup.sh"
+2025-07-28T00:31:30.5603528Z [36;1mchmod +x "$GITHUB_ACTION_PATH/setup.sh"[0m
+2025-07-28T00:31:30.5638566Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-07-28T00:31:30.5638924Z env:
+2025-07-28T00:31:30.5639266Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.5639678Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.5639994Z ##[endgroup]
+2025-07-28T00:31:30.5776979Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh -p \
+2025-07-28T00:31:30.5777545Z [36;1m$GITHUB_ACTION_PATH/setup.sh -p \[0m
+2025-07-28T00:31:30.5777813Z [36;1m  -n '3.16.0' \[0m
+2025-07-28T00:31:30.5778029Z [36;1m  -f '' \[0m
+2025-07-28T00:31:30.5778215Z [36;1m  -a 'X64' \[0m
+2025-07-28T00:31:30.5778406Z [36;1m  -k '' \[0m
+2025-07-28T00:31:30.5778585Z [36;1m  -c '' \[0m
+2025-07-28T00:31:30.5778763Z [36;1m  -l '' \[0m
+2025-07-28T00:31:30.5778952Z [36;1m  -d 'default' \[0m
+2025-07-28T00:31:30.5779274Z [36;1m  -g 'https://github.com/flutter/flutter.git' \[0m
+2025-07-28T00:31:30.5779588Z [36;1m  stable[0m
+2025-07-28T00:31:30.5808253Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-07-28T00:31:30.5808583Z env:
+2025-07-28T00:31:30.5808838Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.5809236Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.5809548Z ##[endgroup]
+2025-07-28T00:31:30.7605415Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh \
+2025-07-28T00:31:30.7605775Z [36;1m$GITHUB_ACTION_PATH/setup.sh \[0m
+2025-07-28T00:31:30.7606037Z [36;1m  -n '3.16.0' \[0m
+2025-07-28T00:31:30.7606252Z [36;1m  -a 'x64' \[0m
+2025-07-28T00:31:30.7606548Z [36;1m  -c '/opt/hostedtoolcache/flutter/stable-3.16.0-x64' \[0m
+2025-07-28T00:31:30.7606887Z [36;1m  -d '/home/runner/.pub-cache' \[0m
+2025-07-28T00:31:30.7607128Z [36;1m  stable[0m
+2025-07-28T00:31:30.7636514Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-07-28T00:31:30.7636826Z env:
+2025-07-28T00:31:30.7637063Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.7637452Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:31:30.7637759Z ##[endgroup]
+2025-07-28T00:31:30.9126848Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2025-07-28T00:31:30.9127649Z                                  Dload  Upload   Total   Spent    Left  Speed
+2025-07-28T00:31:30.9128013Z 
+2025-07-28T00:31:31.4197607Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2025-07-28T00:31:32.4194695Z  18  627M   18  114M    0     0   225M      0  0:00:02 --:--:--  0:00:02  225M
+2025-07-28T00:31:33.2492882Z  61  627M   61  383M    0     0   254M      0  0:00:02  0:00:01  0:00:01  254M
+2025-07-28T00:31:33.2494153Z 100  627M  100  627M    0     0   268M      0  0:00:02  0:00:02 --:--:--  268M

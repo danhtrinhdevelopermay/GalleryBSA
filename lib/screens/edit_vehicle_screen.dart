@@ -244,9 +244,9 @@ class _EditVehicleScreenState extends State<EditVehicleScreen> {
                       'sold': Text('Sold'),
                     },
                     groupValue: _status,
-                    onValueChanged: (value) {
+                    onValueChanged: (String? value) {
                       setState(() {
-                        if (value != null) _status = value;
+                        _status = value ?? 'available';
                       });
                     },
                   ),

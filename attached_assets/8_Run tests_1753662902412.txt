@@ -1,0 +1,13 @@
+﻿2025-07-28T00:32:30.6396094Z ##[group]Run flutter test
+2025-07-28T00:32:30.6396365Z [36;1mflutter test[0m
+2025-07-28T00:32:30.6423769Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:32:30.6424019Z env:
+2025-07-28T00:32:30.6424274Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:32:30.6424670Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:32:30.6425063Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:32:30.6425386Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:32:30.6425797Z ##[endgroup]
+2025-07-28T00:32:31.7283772Z 
+2025-07-28T00:32:47.0388795Z ✅ Vehicle Gallery app test
+2025-07-28T00:32:47.0737640Z 
+2025-07-28T00:32:47.0747836Z 🎉 1 test passed.
