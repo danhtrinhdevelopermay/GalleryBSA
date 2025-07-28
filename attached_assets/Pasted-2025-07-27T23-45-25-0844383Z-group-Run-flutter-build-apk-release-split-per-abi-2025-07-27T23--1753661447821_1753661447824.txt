@@ -1,0 +1,32 @@
+2025-07-27T23:45:25.0844383Z ##[group]Run flutter build apk --release --split-per-abi
+2025-07-27T23:45:25.0845064Z [36;1mflutter build apk --release --split-per-abi[0m
+2025-07-27T23:45:25.0883971Z shell: /usr/bin/bash -e {0}
+2025-07-27T23:45:25.0884222Z env:
+2025-07-27T23:45:25.0884488Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-27T23:45:25.0884882Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-27T23:45:25.0885269Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-27T23:45:25.0885594Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-27T23:45:25.0885831Z ##[endgroup]
+2025-07-27T23:45:25.6947537Z 
+2025-07-27T23:46:26.3520276Z Running Gradle task 'assembleRelease'...                        
+2025-07-27T23:46:26.3549421Z 
+2025-07-27T23:46:26.3550177Z FAILURE: Build failed with an exception.
+2025-07-27T23:46:26.3550745Z 
+2025-07-27T23:46:26.3551218Z * Where:
+2025-07-27T23:46:26.3552123Z Build file '/home/runner/work/GalleryBSA/GalleryBSA/android/app/build.gradle' line: 68
+2025-07-27T23:46:26.3553024Z 
+2025-07-27T23:46:26.3553358Z * What went wrong:
+2025-07-27T23:46:26.3553956Z A problem occurred evaluating project ':app'.
+2025-07-27T23:46:26.3564489Z > Could not find method useProguard() for arguments [false] on BuildType$AgpDecorated_Decorated{name=release, debuggable=false, testCoverageEnabled=false, jniDebuggable=false, pseudoLocalesEnabled=false, renderscriptDebuggable=false, renderscriptOptimLevel=3, minifyEnabled=false, zipAlignEnabled=true, signingConfig=SigningConfig$AgpDecorated_Decorated{name=debug, storeFile=/home/runner/.android/debug.keystore, storePassword=android, keyAlias=AndroidDebugKey, keyPassword=android, storeType=pkcs12, v1SigningEnabled=true, v2SigningEnabled=true, enableV1Signing=null, enableV2Signing=null, enableV3Signing=null, enableV4Signing=null}, embedMicroApp=true, mBuildConfigFields={}, mResValues={}, mProguardFiles=[/home/runner/work/GalleryBSA/GalleryBSA/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.3.0, /opt/hostedtoolcache/flutter/stable-3.16.0-x64/packages/flutter_tools/gradle/flutter_proguard_rules.pro, /home/runner/work/GalleryBSA/GalleryBSA/android/app/proguard-rules.pro], mConsumerProguardFiles=[], mManifestPlaceholders={}} of type com.android.build.gradle.internal.dsl.BuildType$AgpDecorated.
+2025-07-27T23:46:26.3573770Z 
+2025-07-27T23:46:26.3574348Z * Try:
+2025-07-27T23:46:26.3575166Z > Run with --stacktrace option to get the stack trace.
+2025-07-27T23:46:26.3576296Z > Run with --info or --debug option to get more log output.
+2025-07-27T23:46:26.3577268Z > Run with --scan to get full insights.
+2025-07-27T23:46:26.3577972Z 
+2025-07-27T23:46:26.3578537Z * Get more help at https://help.gradle.org
+2025-07-27T23:46:26.3579458Z 
+2025-07-27T23:46:26.3579944Z BUILD FAILED in 1m
+2025-07-27T23:46:26.9299224Z Running Gradle task 'assembleRelease'...                           61.2s
+2025-07-27T23:46:26.9342847Z Gradle task assembleRelease failed with exit code 1
+2025-07-27T23:46:26.9489413Z ##[error]Process completed with exit code 1.
