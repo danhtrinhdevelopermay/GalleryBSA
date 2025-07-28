@@ -46,10 +46,12 @@ Phương thức `useProguard()` đã bị deprecated trong các phiên bản And
 - **Tạo test cơ bản**: Thêm `test/widget_test.dart` để resolve lỗi test directory
 
 ### 2. Cập nhật Android Gradle Plugin Version  
-- **Gradle Wrapper**: Tạo `android/gradle/wrapper/gradle-wrapper.properties` với Gradle 7.6.3
-- **Cập nhật android/build.gradle**: Sử dụng Android Gradle Plugin 7.4.2 (tương thích với Flutter 3.16.0)
-- **Cập nhật android/settings.gradle**: Đồng bộ phiên bản plugin với build.gradle
-- **Java Compatibility**: Nâng cấp lên Java 11 cho tương thích với AGP 7.4.2
+- **Final Configuration**: AGP 7.3.0 + Gradle 7.5 + Java 11 (tương thích tốt nhất với Flutter 3.16.0)
+- **Gradle Wrapper**: Tạo `android/gradle/wrapper/gradle-wrapper.properties` với Gradle 7.5
+- **GitHub Actions**: Sử dụng Java 11 thay vì Java 17 để tránh xung đột classpath
+- **Gradle Properties**: Tạo `android/gradle.properties` với cấu hình memory và R8 optimization
+- **ProGuard Rules**: Tạo `android/app/proguard-rules.pro` để keep Android Build classes
+- **Java Compatibility**: Nâng cấp lên Java 11 cho tương thích với AGP 7.3.0
 - **SDK Versions**: Cố định compileSdkVersion và targetSdkVersion = 34
 - **Sửa null comparison**: Thay `value` parameter bằng `String? value` và `_status = value ?? 'available';`
 
