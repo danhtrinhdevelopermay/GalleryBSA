@@ -1,0 +1,16 @@
+﻿2025-07-28T00:25:16.5716322Z ##[group]Run flutter analyze
+2025-07-28T00:25:16.5716603Z [36;1mflutter analyze[0m
+2025-07-28T00:25:16.5744652Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:25:16.5744900Z env:
+2025-07-28T00:25:16.5745143Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:25:16.5745513Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:25:16.5745882Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:25:16.5746198Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:25:16.5746426Z ##[endgroup]
+2025-07-28T00:25:26.2129257Z Analyzing GalleryBSA...                                         
+2025-07-28T00:25:26.2132140Z 
+2025-07-28T00:25:26.2169433Z warning • The left operand can't be null, so the right operand is never executed • lib/screens/add_vehicle_screen.dart:263:44 • dead_null_aware_expression
+2025-07-28T00:25:26.2172002Z warning • The left operand can't be null, so the right operand is never executed • lib/screens/edit_vehicle_screen.dart:249:44 • dead_null_aware_expression
+2025-07-28T00:25:26.2178256Z 
+2025-07-28T00:25:26.2302332Z 2 issues found. (ran in 8.8s)
+2025-07-28T00:25:26.2465791Z ##[error]Process completed with exit code 1.

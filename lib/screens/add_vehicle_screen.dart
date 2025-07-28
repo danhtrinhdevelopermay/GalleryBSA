@@ -260,7 +260,7 @@ class _AddVehicleScreenState extends State<AddVehicleScreen> {
                     groupValue: _status,
                     onValueChanged: (value) {
                       setState(() {
-                        _status = value ?? 'available';
+                        if (value != null) _status = value;
                       });
                     },
                   ),

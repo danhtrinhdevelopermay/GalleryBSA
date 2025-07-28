@@ -23,6 +23,16 @@ Test directory "test" not found.
 Removing unused resources requires unused code shrinking to be turned on
 ```
 
+### 5. Lỗi Android Gradle Plugin Compatibility
+```
+java.lang.NoClassDefFoundError: com/android/build/OutputFile
+```
+
+### 6. Lỗi Flutter Analyze (dead_null_aware_expression)
+```
+The left operand can't be null, so the right operand is never executed
+```
+
 ## Nguyên Nhân
 Phương thức `useProguard()` đã bị deprecated trong các phiên bản Android Gradle Plugin mới hơn (từ phiên bản 3.4.0 trở lên).
 
@@ -35,7 +45,17 @@ Phương thức `useProguard()` đã bị deprecated trong các phiên bản And
 - **Tạo thư mục assets**: Tạo `assets/images/` với file .gitkeep
 - **Tạo test cơ bản**: Thêm `test/widget_test.dart` để resolve lỗi test directory
 
-### 2. Cập nhật file `android/app/build.gradle`
+### 2. Cập nhật Android Gradle Plugin Version
+- **Cập nhật android/build.gradle**: Nâng cấp từ `7.3.0` lên `7.4.2`
+- **Cập nhật android/settings.gradle**: Đồng bộ phiên bản plugin với build.gradle
+- **Sửa null check**: Thay `value?? 'available'` bằng `if (value != null) _status = value;`
+
+### 3. Tắt App Icon Generation
+- **Comment flutter_icons config**: Tạm thời tắt cấu hình trong pubspec.yaml
+- **Bỏ qua generate icons**: Comment bước này trong GitHub Actions workflow
+- **Thêm flutter_launcher_icons**: Vào dev_dependencies để tránh lỗi package not found
+
+### 4. Cập nhật file `android/app/build.gradle`
 **Trước khi sửa:**
 ```gradle
 buildTypes {

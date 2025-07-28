@@ -33,9 +33,10 @@ jobs:
     - name: Get dependencies
       run: flutter pub get
 
-    - name: Generate app icons
-      run: flutter pub run flutter_launcher_icons:main
-      continue-on-error: true
+    # Skip app icon generation for now
+    # - name: Generate app icons
+    #   run: flutter pub run flutter_launcher_icons:main
+    #   continue-on-error: true
 
     - name: Analyze code
       run: flutter analyze
