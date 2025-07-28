@@ -1,0 +1,46 @@
+﻿2025-07-28T01:00:48.5649521Z ##[group]Run flutter build apk --release --split-per-abi
+2025-07-28T01:00:48.5649935Z [36;1mflutter build apk --release --split-per-abi[0m
+2025-07-28T01:00:48.5677900Z shell: /usr/bin/bash -e {0}
+2025-07-28T01:00:48.5678134Z env:
+2025-07-28T01:00:48.5678380Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/8.0.462-8/x64
+2025-07-28T01:00:48.5678770Z   JAVA_HOME_8_X64: /opt/hostedtoolcache/Java_Zulu_jdk/8.0.462-8/x64
+2025-07-28T01:00:48.5679168Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T01:00:48.5679502Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T01:00:48.5679740Z ##[endgroup]
+2025-07-28T01:00:49.1711034Z 
+2025-07-28T01:01:54.9075124Z 
+2025-07-28T01:01:54.9075613Z FAILURE: Build failed with an exception.
+2025-07-28T01:01:54.9076008Z 
+2025-07-28T01:01:54.9076171Z * Where:
+2025-07-28T01:01:54.9076778Z Build file '/home/runner/work/GalleryBSA/GalleryBSA/android/app/build.gradle' line: 24
+2025-07-28T01:01:54.9077591Z 
+2025-07-28T01:01:54.9077727Z * What went wrong:
+2025-07-28T01:01:54.9078178Z A problem occurred evaluating project ':app'.
+2025-07-28T01:01:54.9078792Z > Failed to apply plugin 'com.android.internal.application'.
+2025-07-28T01:01:54.9079562Z    > Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8.
+2025-07-28T01:01:54.9080251Z      You can try some of the following options:
+2025-07-28T01:01:54.9080716Z        - changing the IDE settings.
+2025-07-28T01:01:54.9081186Z        - changing the JAVA_HOME environment variable.
+2025-07-28T01:01:54.9081780Z        - changing `org.gradle.java.home` in `gradle.properties`.
+2025-07-28T01:01:54.9082200Z 
+2025-07-28T01:01:54.9082308Z * Try:
+2025-07-28T01:01:54.9082678Z > Run with --stacktrace option to get the stack trace.
+2025-07-28T01:01:54.9083252Z > Run with --info or --debug option to get more log output.
+2025-07-28T01:01:54.9083789Z > Run with --scan to get full insights.
+2025-07-28T01:01:54.9084080Z 
+2025-07-28T01:01:54.9084272Z * Get more help at https://help.gradle.org
+2025-07-28T01:01:54.9084615Z 
+2025-07-28T01:01:54.9084743Z BUILD FAILED in 1m 5s
+2025-07-28T01:01:54.9085209Z Running Gradle task 'assembleRelease'...                        
+2025-07-28T01:01:55.4090552Z Running Gradle task 'assembleRelease'...                           66.2s
+2025-07-28T01:01:55.4126088Z 
+2025-07-28T01:01:55.4133355Z ┌─ Flutter Fix ─────────────────────────────────────────────────────────────────┐
+2025-07-28T01:01:55.4136003Z │ [!] You need Java 11 or higher to build your app with this version of Gradle. │
+2025-07-28T01:01:55.4136838Z │                                                                               │
+2025-07-28T01:01:55.4137805Z │ To get Java 11, update to the latest version of Android Studio on             │
+2025-07-28T01:01:55.4141839Z │ https://developer.android.com/studio/install.                                 │
+2025-07-28T01:01:55.4142728Z │                                                                               │
+2025-07-28T01:01:55.4145154Z │ To check the Java version used by Flutter, run `flutter doctor -v`.           │
+2025-07-28T01:01:55.4146150Z └───────────────────────────────────────────────────────────────────────────────┘
+2025-07-28T01:01:55.4202540Z Gradle task assembleRelease failed with exit code 1
+2025-07-28T01:01:55.4356583Z ##[error]Process completed with exit code 1.
