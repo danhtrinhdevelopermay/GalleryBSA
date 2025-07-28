@@ -45,15 +45,15 @@ Phương thức `useProguard()` đã bị deprecated trong các phiên bản And
 - **Tạo thư mục assets**: Tạo `assets/images/` với file .gitkeep
 - **Tạo test cơ bản**: Thêm `test/widget_test.dart` để resolve lỗi test directory
 
-### 2. Cập nhật Android Gradle Plugin Version  
-- **Final Configuration**: AGP 7.3.0 + Gradle 7.5 + Java 11 (tương thích tốt nhất với Flutter 3.16.0)
-- **Gradle Wrapper**: Tạo `android/gradle/wrapper/gradle-wrapper.properties` với Gradle 7.5
-- **GitHub Actions**: Sử dụng Java 11 thay vì Java 17 để tránh xung đột classpath
-- **Gradle Properties**: Tạo `android/gradle.properties` với cấu hình memory và R8 optimization
-- **ProGuard Rules**: Tạo `android/app/proguard-rules.pro` để keep Android Build classes
-- **Java Compatibility**: Nâng cấp lên Java 11 cho tương thích với AGP 7.3.0
-- **SDK Versions**: Cố định compileSdkVersion và targetSdkVersion = 34
-- **Sửa null comparison**: Thay `value` parameter bằng `String? value` và `_status = value ?? 'available';`
+### 2. Final Solution: Stable Legacy Stack
+- **Ultimate Configuration**: AGP 7.1.3 + Gradle 7.3.3 + Java 8 + SDK 33
+- **Root Cause**: Flutter 3.16.0 có incompatibility với AGP 7.2+ do OutputFile class changes
+- **Gradle Wrapper**: Gradle 7.3.3 distribution (tương thích perfect với AGP 7.1.3)
+- **GitHub Actions**: Java 8 để match với Flutter 3.16.0 build environment
+- **SDK Downgrade**: compileSdk/targetSdk = 33 để tránh latest API conflicts
+- **Gradle Properties**: Memory optimization và R8 disabled cho stability
+- **ProGuard Rules**: Keep Android Build classes và Flutter framework
+- **Java Compatibility**: JVM target 1.8 cho full compatibility với legacy stack
 
 ### 3. Tắt App Icon Generation
 - **Comment flutter_icons config**: Tạm thời tắt cấu hình trong pubspec.yaml

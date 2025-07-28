@@ -1,0 +1,69 @@
+﻿2025-07-28T00:52:19.8507130Z ##[group]Run actions/checkout@v4
+2025-07-28T00:52:19.8508408Z with:
+2025-07-28T00:52:19.8509127Z   repository: danhtrinhdevelopermay/GalleryBSA
+2025-07-28T00:52:19.8510225Z   token: ***
+2025-07-28T00:52:19.8510752Z   ssh-strict: true
+2025-07-28T00:52:19.8511251Z   ssh-user: git
+2025-07-28T00:52:19.8511936Z   persist-credentials: true
+2025-07-28T00:52:19.8512584Z   clean: true
+2025-07-28T00:52:19.8513102Z   sparse-checkout-cone-mode: true
+2025-07-28T00:52:19.8513894Z   fetch-depth: 1
+2025-07-28T00:52:19.8514410Z   fetch-tags: false
+2025-07-28T00:52:19.8514960Z   show-progress: true
+2025-07-28T00:52:19.8515587Z   lfs: false
+2025-07-28T00:52:19.8516103Z   submodules: false
+2025-07-28T00:52:19.8516918Z   set-safe-directory: true
+2025-07-28T00:52:19.8518087Z ##[endgroup]
+2025-07-28T00:52:19.9578388Z Syncing repository: danhtrinhdevelopermay/GalleryBSA
+2025-07-28T00:52:19.9581314Z ##[group]Getting Git version info
+2025-07-28T00:52:19.9582546Z Working directory is '/home/runner/work/GalleryBSA/GalleryBSA'
+2025-07-28T00:52:19.9584310Z [command]/usr/bin/git version
+2025-07-28T00:52:19.9628154Z git version 2.50.1
+2025-07-28T00:52:19.9653745Z ##[endgroup]
+2025-07-28T00:52:19.9674511Z Temporarily overriding HOME='/home/runner/work/_temp/c01f3bb0-324c-4084-8a20-b647f40e5316' before making global git config changes
+2025-07-28T00:52:19.9676971Z Adding repository directory to the temporary git global config as a safe directory
+2025-07-28T00:52:19.9679592Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/GalleryBSA/GalleryBSA
+2025-07-28T00:52:19.9712471Z Deleting the contents of '/home/runner/work/GalleryBSA/GalleryBSA'
+2025-07-28T00:52:19.9715850Z ##[group]Initializing the repository
+2025-07-28T00:52:19.9720026Z [command]/usr/bin/git init /home/runner/work/GalleryBSA/GalleryBSA
+2025-07-28T00:52:19.9824573Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-07-28T00:52:19.9827711Z hint: is subject to change. To configure the initial branch name to use in all
+2025-07-28T00:52:19.9829433Z hint: of your new repositories, which will suppress this warning, call:
+2025-07-28T00:52:19.9830495Z hint:
+2025-07-28T00:52:19.9831251Z hint: 	git config --global init.defaultBranch <name>
+2025-07-28T00:52:19.9832349Z hint:
+2025-07-28T00:52:19.9833222Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-07-28T00:52:19.9834749Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-07-28T00:52:19.9835883Z hint:
+2025-07-28T00:52:19.9836404Z hint: 	git branch -m <name>
+2025-07-28T00:52:19.9836990Z hint:
+2025-07-28T00:52:19.9838359Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-07-28T00:52:19.9840126Z Initialized empty Git repository in /home/runner/work/GalleryBSA/GalleryBSA/.git/
+2025-07-28T00:52:19.9903744Z [command]/usr/bin/git remote add origin https://github.com/danhtrinhdevelopermay/GalleryBSA
+2025-07-28T00:52:19.9907287Z ##[endgroup]
+2025-07-28T00:52:19.9908324Z ##[group]Disabling automatic garbage collection
+2025-07-28T00:52:19.9909248Z [command]/usr/bin/git config --local gc.auto 0
+2025-07-28T00:52:19.9910953Z ##[endgroup]
+2025-07-28T00:52:19.9911706Z ##[group]Setting up auth
+2025-07-28T00:52:19.9913767Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-07-28T00:52:19.9943393Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-07-28T00:52:20.0250671Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-07-28T00:52:20.0278558Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-07-28T00:52:20.0494644Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-07-28T00:52:20.0528933Z ##[endgroup]
+2025-07-28T00:52:20.0530527Z ##[group]Fetching the repository
+2025-07-28T00:52:20.0547681Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +42bf880a41733351dd1699883d6552b3a8e9e687:refs/remotes/origin/main
+2025-07-28T00:52:20.2448763Z From https://github.com/danhtrinhdevelopermay/GalleryBSA
+2025-07-28T00:52:20.2450162Z  * [new ref]         42bf880a41733351dd1699883d6552b3a8e9e687 -> origin/main
+2025-07-28T00:52:20.2505701Z ##[endgroup]
+2025-07-28T00:52:20.2507223Z ##[group]Determining the checkout info
+2025-07-28T00:52:20.2509320Z ##[endgroup]
+2025-07-28T00:52:20.2514005Z [command]/usr/bin/git sparse-checkout disable
+2025-07-28T00:52:20.2554201Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-07-28T00:52:20.2582219Z ##[group]Checking out the ref
+2025-07-28T00:52:20.2586286Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-07-28T00:52:20.2714555Z Switched to a new branch 'main'
+2025-07-28T00:52:20.2717566Z branch 'main' set up to track 'origin/main'.
+2025-07-28T00:52:20.2723906Z ##[endgroup]
+2025-07-28T00:52:20.2757151Z [command]/usr/bin/git log -1 --format=%H
+2025-07-28T00:52:20.2778395Z 42bf880a41733351dd1699883d6552b3a8e9e687

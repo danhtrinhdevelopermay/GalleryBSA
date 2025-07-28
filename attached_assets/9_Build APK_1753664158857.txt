@@ -1,0 +1,33 @@
+﻿2025-07-28T00:53:51.9502779Z ##[group]Run flutter build apk --release --split-per-abi
+2025-07-28T00:53:51.9503389Z [36;1mflutter build apk --release --split-per-abi[0m
+2025-07-28T00:53:51.9531062Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:53:51.9531285Z env:
+2025-07-28T00:53:51.9531515Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.28-6/x64
+2025-07-28T00:53:51.9531896Z   JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.28-6/x64
+2025-07-28T00:53:51.9532288Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:53:51.9532602Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:53:51.9532831Z ##[endgroup]
+2025-07-28T00:53:52.5557916Z 
+2025-07-28T00:54:56.5018328Z 
+2025-07-28T00:54:56.5019061Z FAILURE: Build failed with an exception.
+2025-07-28T00:54:56.5077782Z 
+2025-07-28T00:54:56.5078306Z Running Gradle task 'assembleRelease'...                        
+2025-07-28T00:54:56.5079304Z * Where:
+2025-07-28T00:54:56.5080014Z Build file '/home/runner/work/GalleryBSA/GalleryBSA/android/build.gradle' line: 26
+2025-07-28T00:54:56.5080730Z 
+2025-07-28T00:54:56.5080973Z * What went wrong:
+2025-07-28T00:54:56.5081500Z A problem occurred evaluating root project 'android'.
+2025-07-28T00:54:56.5082150Z > A problem occurred configuring project ':app'.
+2025-07-28T00:54:56.5082844Z    > java.lang.NoClassDefFoundError: com/android/build/OutputFile
+2025-07-28T00:54:56.5083440Z 
+2025-07-28T00:54:56.5083668Z * Try:
+2025-07-28T00:54:56.5084137Z > Run with --stacktrace option to get the stack trace.
+2025-07-28T00:54:56.5084828Z > Run with --info or --debug option to get more log output.
+2025-07-28T00:54:56.5085463Z > Run with --scan to get full insights.
+2025-07-28T00:54:56.5085871Z 
+2025-07-28T00:54:56.5086182Z * Get more help at https://help.gradle.org
+2025-07-28T00:54:56.5086622Z 
+2025-07-28T00:54:56.5086869Z BUILD FAILED in 1m 3s
+2025-07-28T00:54:57.1533463Z Running Gradle task 'assembleRelease'...                           64.5s
+2025-07-28T00:54:57.1578340Z Gradle task assembleRelease failed with exit code 1
+2025-07-28T00:54:57.1729346Z ##[error]Process completed with exit code 1.
