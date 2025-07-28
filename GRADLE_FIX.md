@@ -45,9 +45,12 @@ Phương thức `useProguard()` đã bị deprecated trong các phiên bản And
 - **Tạo thư mục assets**: Tạo `assets/images/` với file .gitkeep
 - **Tạo test cơ bản**: Thêm `test/widget_test.dart` để resolve lỗi test directory
 
-### 2. Cập nhật Android Gradle Plugin Version
-- **Cập nhật android/build.gradle**: Nâng cấp từ `7.3.0` lên `8.1.4` (qua 7.4.2)
-- **Cập nhật android/settings.gradle**: Đồng bộ phiên bản plugin với build.gradle  
+### 2. Cập nhật Android Gradle Plugin Version  
+- **Gradle Wrapper**: Tạo `android/gradle/wrapper/gradle-wrapper.properties` với Gradle 7.6.3
+- **Cập nhật android/build.gradle**: Sử dụng Android Gradle Plugin 7.4.2 (tương thích với Flutter 3.16.0)
+- **Cập nhật android/settings.gradle**: Đồng bộ phiên bản plugin với build.gradle
+- **Java Compatibility**: Nâng cấp lên Java 11 cho tương thích với AGP 7.4.2
+- **SDK Versions**: Cố định compileSdkVersion và targetSdkVersion = 34
 - **Sửa null comparison**: Thay `value` parameter bằng `String? value` và `_status = value ?? 'available';`
 
 ### 3. Tắt App Icon Generation

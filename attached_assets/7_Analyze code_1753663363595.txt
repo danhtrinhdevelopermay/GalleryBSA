@@ -1,0 +1,11 @@
+﻿2025-07-28T00:38:30.2558247Z ##[group]Run flutter analyze
+2025-07-28T00:38:30.2558943Z [36;1mflutter analyze[0m
+2025-07-28T00:38:30.2586594Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:38:30.2586822Z env:
+2025-07-28T00:38:30.2587063Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:38:30.2587459Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:38:30.2587844Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:38:30.2588173Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:38:30.2588401Z ##[endgroup]
+2025-07-28T00:38:40.0975704Z Analyzing GalleryBSA...                                         
+2025-07-28T00:38:40.0989015Z No issues found! (ran in 9.0s)
