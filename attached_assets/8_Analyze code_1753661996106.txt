@@ -1,0 +1,21 @@
+﻿2025-07-28T00:17:13.4865079Z ##[group]Run flutter analyze
+2025-07-28T00:17:13.4865351Z [36;1mflutter analyze[0m
+2025-07-28T00:17:13.4893030Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:17:13.4893278Z env:
+2025-07-28T00:17:13.4893516Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:17:13.4893922Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:17:13.4894294Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:17:13.4894618Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:17:13.4894842Z ##[endgroup]
+2025-07-28T00:17:22.4072396Z Analyzing GalleryBSA...                                         
+2025-07-28T00:17:22.4075164Z 
+2025-07-28T00:17:22.4110775Z    info • The import of 'package:flutter/cupertino.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' • lib/main.dart:2:8 • unnecessary_import
+2025-07-28T00:17:22.4113823Z warning • The '!' will have no effect because the receiver can't be null • lib/screens/add_vehicle_screen.dart:263:40 • unnecessary_non_null_assertion
+2025-07-28T00:17:22.4115498Z warning • The '!' will have no effect because the receiver can't be null • lib/screens/edit_vehicle_screen.dart:249:40 • unnecessary_non_null_assertion
+2025-07-28T00:17:22.4117798Z    info • 'VideoPlayerController.network' is deprecated and shouldn't be used. Use VideoPlayerController.networkUrl instead • lib/screens/vehicle_detail_screen.dart:436:21 • deprecated_member_use
+2025-07-28T00:17:22.4120262Z    info • 'VideoPlayerController.network' is deprecated and shouldn't be used. Use VideoPlayerController.networkUrl instead • lib/screens/vehicle_detail_screen.dart:565:21 • deprecated_member_use
+2025-07-28T00:17:22.4122635Z    info • The import of 'package:flutter/cupertino.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' • lib/utils/theme.dart:2:8 • unnecessary_import
+2025-07-28T00:17:22.4124391Z warning • The asset directory 'assets/images/' doesn't exist • pubspec.yaml:35:7 • asset_directory_does_not_exist
+2025-07-28T00:17:22.4126783Z 
+2025-07-28T00:17:22.4247625Z 7 issues found. (ran in 8.1s)
+2025-07-28T00:17:22.4392938Z ##[error]Process completed with exit code 1.

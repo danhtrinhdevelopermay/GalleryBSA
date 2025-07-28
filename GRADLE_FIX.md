@@ -1,9 +1,26 @@
 # Hướng Dẫn Sửa Lỗi Build APK trên GitHub Actions
 
-## Vấn Đề
-Lỗi build APK thất bại với thông báo:
+## Các Vấn Đề Đã Sửa
+
+### 1. Lỗi useProguard() Deprecated
 ```
 Could not find method useProguard() for arguments [false] on BuildType
+```
+
+### 2. Lỗi Flutter Analyze (7 issues)
+- Import cupertino.dart không cần thiết
+- Null assertion operator (!) không cần thiết  
+- VideoPlayerController.network deprecated
+- Thư mục assets/images/ không tồn tại
+
+### 3. Lỗi Flutter Test
+```
+Test directory "test" not found.
+```
+
+### 4. Lỗi Resource Shrinking
+```
+Removing unused resources requires unused code shrinking to be turned on
 ```
 
 ## Nguyên Nhân
@@ -11,7 +28,14 @@ Phương thức `useProguard()` đã bị deprecated trong các phiên bản And
 
 ## Giải Pháp Đã Áp Dụng
 
-### 1. Cập nhật file `android/app/build.gradle`
+### 1. Sửa lỗi Flutter Code Issues
+- **Loại bỏ import không cần thiết**: Xóa `import 'package:flutter/cupertino.dart'` từ main.dart và theme.dart
+- **Cập nhật VideoPlayerController**: Thay `VideoPlayerController.network()` bằng `VideoPlayerController.networkUrl(Uri.parse())`
+- **Sửa null assertion**: Thay `value!` bằng `value ?? 'available'` để tránh lỗi null safety
+- **Tạo thư mục assets**: Tạo `assets/images/` với file .gitkeep
+- **Tạo test cơ bản**: Thêm `test/widget_test.dart` để resolve lỗi test directory
+
+### 2. Cập nhật file `android/app/build.gradle`
 **Trước khi sửa:**
 ```gradle
 buildTypes {
@@ -30,8 +54,12 @@ buildTypes {
     release {
         signingConfig signingConfigs.debug
         minifyEnabled false
-        // useProguard is deprecated, removed the line
+        shrinkResources false
         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+    debug {
+        minifyEnabled false
+        shrinkResources false
     }
 }
 ```

@@ -433,7 +433,7 @@ class _VideoThumbnailState extends State<VideoThumbnail> {
 
   void _initializeVideo() async {
     try {
-      _controller = VideoPlayerController.network(widget.videoUrl);
+      _controller = VideoPlayerController.networkUrl(Uri.parse(widget.videoUrl));
       await _controller!.initialize();
       setState(() {});
     } catch (e) {
@@ -562,7 +562,7 @@ class _VideoGalleryItemState extends State<VideoGalleryItem> {
 
   void _initializeVideo() async {
     try {
-      _controller = VideoPlayerController.network(widget.videoUrl);
+      _controller = VideoPlayerController.networkUrl(Uri.parse(widget.videoUrl));
       await _controller!.initialize();
       setState(() {});
     } catch (e) {

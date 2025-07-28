@@ -1,0 +1,11 @@
+﻿2025-07-28T00:17:22.4423810Z ##[group]Run flutter test
+2025-07-28T00:17:22.4424078Z [36;1mflutter test[0m
+2025-07-28T00:17:22.4462595Z shell: /usr/bin/bash -e {0}
+2025-07-28T00:17:22.4462968Z env:
+2025-07-28T00:17:22.4463353Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:17:22.4463965Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.16-8/x64
+2025-07-28T00:17:22.4464587Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.16.0-x64
+2025-07-28T00:17:22.4465093Z   PUB_CACHE: /home/runner/.pub-cache
+2025-07-28T00:17:22.4465480Z ##[endgroup]
+2025-07-28T00:17:22.5825918Z Test directory "test" not found.
+2025-07-28T00:17:22.5949834Z ##[error]Process completed with exit code 1.
